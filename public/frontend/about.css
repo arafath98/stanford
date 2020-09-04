@@ -1,0 +1,56 @@
+.about-page-header {
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.about-page-header .about-img {
+  margin-top: 50px;
+}
+
+.about-page-header .about-img img {
+  width: 100%;
+}
+
+.about-page-leadership {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: transparent;
+}
+
+.about-page-history {
+  background-color: transparent;
+  padding: 30px;
+}
+
+.about-page-experience {
+  background-color: #2f2424;
+  padding: 50px;
+  position: relative;
+}
+
+.about-page-experience .experience-text {
+  background-color: white;
+  color: black;
+  padding: 80px;
+}
+
+.about-page-experience .experience-img img {
+  width: 100%;
+}
+
+.about-page-experience .link {
+  font-size: 14pt;
+  color: #006cb8;
+  font-weight: bold;
+}
+
+.about-page-experience .link:hover .link {
+  text-decoration: underline;
+}
+
+.about-page-experience .link:hover .link-arrow {
+  margin-left: 3.5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/*# sourceMappingURL=about.css.map */

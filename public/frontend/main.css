@@ -1,0 +1,421 @@
+.navbar {
+  background-color: #b10407;
+}
+
+.navbar *:focus {
+  outline: none;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-toggler span {
+  color: white;
+  margin-left: 3px;
+}
+
+.navbar .nav-item {
+  color: white;
+  margin-right: 7px;
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar .nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .nav-item:hover {
+  background-color: #7e0406;
+}
+
+.main-title {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.card {
+  margin-top: 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  height: 94%;
+  position: relative;
+}
+
+.card .card-image {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.card .card-title {
+  color: #820000;
+  font-weight: bold;
+}
+
+.card .card-text {
+  font-weight: bold;
+}
+
+.card .news-date {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin-top: -95px;
+  color: white;
+  background-color: #2f2424;
+}
+
+.card .news-date .dates {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card .news-date .dates .month {
+  font-size: 10pt;
+}
+
+.card .news-date .dates .day {
+  margin-top: -7px;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.card .events-card-body {
+  margin-top: 40px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-text {
+  color: #006cb8;
+}
+
+.more-news-button {
+  margin-top: 50px;
+  height: 50px;
+  color: white;
+  background-color: #b10407;
+  position: relative;
+}
+
+.more-news-button .more-news-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 13pt;
+}
+
+.more-news-button:hover {
+  background-color: #7e0406;
+}
+
+.events {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-color: #2f2424;
+}
+
+.academics-container {
+  padding: 50px;
+}
+
+.academics-container .academics-image {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.academics-container .title {
+  margin-top: 17px;
+  font-size: 17pt;
+  font-weight: bold;
+}
+
+.academics-container .text {
+  margin-top: 10px;
+  font-size: 14pt;
+}
+
+.academics-container .link {
+  font-size: 14pt;
+  color: #006cb8;
+  font-weight: bold;
+}
+
+.academics-container .link:hover .link {
+  text-decoration: underline;
+}
+
+.academics-container .link:hover .link-arrow {
+  margin-left: 3.5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.academics-container .link-row {
+  margin-top: 20px;
+  font-size: 16pt;
+}
+
+.academics-container .link-row .link-name {
+  color: #006cb8;
+}
+
+.academics-container .link-row .link-name:hover {
+  color: #005b9c;
+  text-decoration: underline;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.professor-comment {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.professor-comment img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.professor-comment .professor-image {
+  padding-top: 30px;
+}
+
+.professor-comment .professor-text {
+  margin-top: 20px;
+  font-size: 22pt;
+}
+
+.professor-comment .title {
+  font-size: 18pt;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.professor-comment .text {
+  margin-bottom: 0px;
+}
+
+.professor-comment .link-container {
+  font-size: 14pt;
+  margin-bottom: 50px;
+}
+
+.professor-comment .link-container:hover .link {
+  text-decoration: underline;
+}
+
+.professor-comment .link-container:hover .link-arrow {
+  padding-left: 3.5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.heather {
+  background-image: url(https://www-media.stanford.edu/wp-content/uploads/2020/04/22140919/Heather_Hadlock_3000x1200_website-v2.jpg);
+}
+
+.alma {
+  background-image: url(https://www-media.stanford.edu/wp-content/uploads/2018/10/07130744/profile_ryancohen_back_landscape.jpg);
+}
+
+.hr {
+  margin-top: 50px;
+  background-color: black;
+}
+
+.research {
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.research .research-images {
+  margin-top: 50px;
+}
+
+.health, .campus-life, .img-3-links {
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #f9f6ef;
+}
+
+.health .health-image, .campus-life .health-image, .img-3-links .health-image {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.health .title, .campus-life .title, .img-3-links .title {
+  margin-top: 17px;
+  font-size: 17pt;
+  font-weight: bold;
+}
+
+.health .text, .campus-life .text, .img-3-links .text {
+  margin-top: 10px;
+  font-size: 14pt;
+}
+
+.health .link, .campus-life .link, .img-3-links .link {
+  font-size: 14pt;
+  color: #006cb8;
+  font-weight: bold;
+}
+
+.health .link:hover .link, .campus-life .link:hover .link, .img-3-links .link:hover .link {
+  text-decoration: underline;
+}
+
+.health .link:hover .link-arrow, .campus-life .link:hover .link-arrow, .img-3-links .link:hover .link-arrow {
+  margin-left: 3.5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.campus-life {
+  background-color: transparent;
+}
+
+.admission {
+  background-color: #f9f6ef;
+  padding: 40px;
+  position: relative;
+}
+
+.admission img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.admission .admission-text {
+  margin-top: 30px;
+}
+
+.admission .title {
+  font-weight: bold;
+  font-size: 14.5pt;
+}
+
+.admission .text {
+  margin-top: 20px;
+}
+
+.about .stats {
+  margin-top: 50px;
+}
+
+.about .stats .number {
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.weather {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f4f4f4;
+}
+
+.weather .sky-logo {
+  text-align: right;
+}
+
+.weather .temp {
+  padding: 0px;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.weather .sky {
+  margin-left: 20px;
+  font-size: 15pt;
+}
+
+.weather .logo {
+  text-align: right;
+}
+
+.weather .logo img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.weather img {
+  width: 35px;
+}
+
+.footer-img img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-links {
+  padding: 30px;
+}
+
+.footer-links .title {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: #820000;
+}
+
+.footer-links .buttons .link-button {
+  margin-top: 20px;
+  border: 1.5px solid black;
+  height: 50px;
+  font-size: 14pt;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  line-height: 45px;
+  text-align: center;
+}
+
+.footer-links .buttons .link-button:hover {
+  border-color: #820000;
+  color: #820000;
+}
+
+.footer-brand {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #8c1515;
+  color: white;
+  font-size: 11pt;
+}
+
+.footer-brand .brand-title {
+  font-weight: bold;
+  font-size: 17pt;
+  text-align: center;
+}
+
+.footer-brand .links {
+  font-weight: bold;
+}
+
+.footer-brand .link {
+  margin-right: 15px;
+}
+
+.footer-brand .terms {
+  margin-top: 15px;
+}
+/*# sourceMappingURL=main.css.map */

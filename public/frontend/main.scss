@@ -1,0 +1,450 @@
+$navBarBackgroundColor: rgb(177, 4, 7);
+$navBarBackgroundColorHover: rgb(126, 4, 6);
+
+.navbar{
+    background-color: $navBarBackgroundColor;
+
+    *:focus {
+        outline: none;
+    }
+
+    .navbar-toggler{
+        border: none;
+
+        span{
+            color: white;
+            margin-left: 3px;
+        }
+    }
+
+    .nav-item{
+        color: white;
+        margin-right: 7px;
+        padding: 5px;
+
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        &:hover{
+            background-color: $navBarBackgroundColorHover;
+        }
+    }
+}
+
+.main-title{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+$cardTitleTextColor: #820000;
+$cardShadowColor: rgba(0, 0, 0, 0.2);
+$cardHoverTextColor: #006cb8;
+
+$eventsBackgroundColor: #2f2424;
+
+.card{
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 $cardShadowColor;
+    transition: 0.4s;
+    height: 94%;
+
+    position: relative;
+
+    .card-image{
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .card-title{
+        color: $cardTitleTextColor;
+        font-weight: bold;
+    }
+
+    .card-text{
+        font-weight: bold;
+    }
+
+    .news-date{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+
+        margin-top: -95px;
+
+        color: white;
+        background-color: $eventsBackgroundColor;
+
+        .dates{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            .month{
+                font-size: 10pt;
+            }
+            .day{
+                margin-top: -7px;
+                font-size: 18pt;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .events-card-body{
+        margin-top: 40px;
+    }
+
+    &:hover{
+        box-shadow: 0px 8px 16px 0 $cardShadowColor;
+        .card-text{
+            color: $cardHoverTextColor;
+        }
+    }
+}
+
+.more-news-button{
+    margin-top: 50px;
+    height: 50px;
+    color: white;
+    background-color: $navBarBackgroundColor;
+
+    position: relative;
+
+    .more-news-text{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 13pt;
+    }
+
+    &:hover{
+        background-color: $navBarBackgroundColorHover;
+    }
+}
+
+.events{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background-color: $eventsBackgroundColor;
+}
+
+.academics-container{
+
+    padding: 50px;
+
+    .academics-image{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .title{
+        margin-top: 17px;
+        font-size: 17pt;
+        font-weight: bold;
+    }
+
+    .text{
+        margin-top: 10px;
+        font-size: 14pt;
+    }
+
+    .link{
+        font-size: 14pt;
+        color: #006cb8;
+        font-weight: bold;
+
+        &:hover{
+            .link{
+                text-decoration: underline;
+            }
+
+            .link-arrow{
+                margin-left: 3.5px;
+                transition: 0.25s;
+            }
+        }
+    }
+
+    .link-row{
+        margin-top: 20px;
+        font-size: 16pt;
+
+        .link-name{
+            color: #006cb8;
+
+            &:hover{
+                color: #005b9c;
+                text-decoration: underline;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+.professor-comment{
+
+    height: 100%;
+    //background-image: url("./imgages/professor.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    //filter: blur(15px);
+
+    color: white;
+
+    img{
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .professor-image{
+        padding-top: 30px;
+    }
+
+    .professor-text{
+        margin-top: 20px;
+        font-size: 22pt;
+    }
+
+    .title{
+        font-size: 18pt;
+        font-weight: bold;
+
+        margin-top: 20px;
+    }
+
+    .text{
+        margin-bottom: 0px;
+    }
+
+    .link-container{
+        font-size: 14pt;
+        margin-bottom: 50px;
+
+        &:hover{
+            .link{
+                text-decoration: underline;
+            }
+
+            .link-arrow{
+                padding-left: 3.5px;
+                transition: 0.25s;
+            }
+        }
+    }
+
+}
+
+.heather{
+    background-image: url(https://www-media.stanford.edu/wp-content/uploads/2020/04/22140919/Heather_Hadlock_3000x1200_website-v2.jpg);
+}
+
+.alma{
+    background-image: url(https://www-media.stanford.edu/wp-content/uploads/2018/10/07130744/profile_ryancohen_back_landscape.jpg);
+}
+
+.hr{
+    margin-top: 50px;
+    background-color: black;
+}
+
+.research{
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .research-images{
+        margin-top: 50px;
+    }
+}
+
+.health, .campus-life, .img-3-links{
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #f9f6ef;
+
+    .health-image{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .title{
+        margin-top: 17px;
+        font-size: 17pt;
+        font-weight: bold;
+    }
+
+    .text{
+        margin-top: 10px;
+        font-size: 14pt;
+    }
+
+    .link{
+        font-size: 14pt;
+        color: #006cb8;
+        font-weight: bold;
+
+        &:hover{
+            .link{
+                text-decoration: underline;
+            }
+
+            .link-arrow{
+                margin-left: 3.5px;
+                transition: 0.25s;
+            }
+        }
+    }
+}
+
+.campus-life{
+    background-color: transparent;
+}
+
+.admission{
+    background-color: #f9f6ef;
+    padding: 40px;
+    position: relative;
+
+    img{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .admission-text{
+        margin-top: 30px;
+    }
+
+    .title{
+        font-weight: bold;
+        font-size: 14.5pt;
+    }
+
+    .text{
+        margin-top: 20px;
+    }
+}
+
+.about{
+
+    .stats{
+        margin-top: 50px;
+
+        .number{
+            font-size: 15pt;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.weather{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: #f4f4f4;
+
+    .sky-logo{
+        text-align: right;
+    }
+
+    .temp{
+        padding: 0px;
+        font-weight: bold;
+        font-size: 15pt;
+    }
+
+    .sky{
+        margin-left: 20px;
+        font-size: 15pt;
+    }
+
+    .logo{
+        text-align: right;
+
+        img{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    
+    img{
+        width: 35px;
+    }
+}
+
+.footer-img{
+
+    img{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.footer-links{
+    padding: 30px;
+
+    .title{
+        padding-top: 25px;
+        padding-bottom: 10px;
+        color: #820000;
+    }
+
+    .buttons{
+
+        .link-button{
+            margin-top: 20px;
+            border: 1.5px solid black;
+            height: 50px;
+            font-size: 14pt;
+            box-shadow: 0 4px 8px 0 $cardShadowColor;
+            line-height: 45px;
+            text-align: center;
+
+
+            &:hover{
+                border-color: #820000;
+                color: #820000;
+            }
+        }
+    }
+}
+
+.footer-brand{
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #8c1515;
+    color: white;
+
+    font-size: 11pt;
+
+    .brand-title{
+        font-weight: bold;
+        font-size: 17pt;
+        text-align: center;
+    }
+
+    .links{
+        font-weight: bold;
+    }
+
+    .link{
+        margin-right: 15px;
+    }
+
+    .terms{
+        margin-top: 15px;
+    }
+}
