@@ -33,3 +33,26 @@ Route::get("/admin/news/edit/{id}", "NewsController@showEditNewsPage")->name('ad
 Route::post("/admin/news/update", "NewsController@updateEdit")->name('admin.news.updateEdit');
 
 Route::get("/admin/news/delete/{id}", "NewsController@deleteNews")->name('admin.news.delete');
+
+
+// Brand
+Route::get("/admin/brand/create", "BrandController@showCreateBrandPage")->name('admin.brand.create');
+Route::get("/admin/brand/manage", "BrandController@showManageBrandPage")->name('admin.brand.manage');
+
+Route::post("/admin/brand/save", "BrandController@saveBrand")->name('admin.brand.save');
+
+Route::get("/admin/brand/edit/{id}", "BrandController@showEditBrandPage")->name('admin.brand.showEditBrandPage');
+Route::post("/admin/brand/update", "BrandController@updateEdit")->name('admin.brand.updateEdit');
+
+Route::get("/admin/brand/delete{id}", "BrandController@deleteBrand")->name('admin.brand.delete');
+
+// Product
+Route::get("/admin/product/create", "ProductController@showCreateProductPage")->name('admin.product.create');
+Route::get("/admin/product/manage", "ProductController@showManageProductPage")->name('admin.product.manage');
+
+Route::post("/admin/product/save", "ProductController@saveProduct")->name('admin.product.save');
+
+Route::get("/admin/product/edit/{id}", "ProductController@showEditProductPage")->name('admin.product.showEditProductPage');
+Route::post("/admin/product/update", "ProductController@updateEdit")->name('admin.product.updateEdit');
+
+Route::get("/admin/product/delete{id}", "ProductController@deleteProduct")->name('admin.product.delete');

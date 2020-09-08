@@ -26,7 +26,42 @@
       </li>
       </ul>
     </li>
-    <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
-   
+
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview">
+      <i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">
+        Brand
+       </span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li>
+          <a class="treeview-item" href="{{ route('admin.brand.create') }}"><i class="icon fa fa-circle-o"></i>
+           Create
+          </a>
+       </li>
+       <li>
+         <a class="treeview-item" href="{{ route('admin.brand.manage') }}"><i class="icon fa fa-circle-o"></i>
+          Manage
+         </a>
+      </li>
+      </ul>
+    </li>
+
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview">
+      <i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">
+        Product
+       </span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li>
+          <a class="treeview-item" href="{{ route('admin.product.create') }}"><i class="icon fa fa-circle-o"></i>
+           Create
+          </a>
+       </li>
+       <li>
+         <a class="treeview-item" href="{{ route('admin.product.manage') }}"><i class="icon fa fa-circle-o"></i>
+          Manage
+         </a>
+      </li>
+      </ul>
+    </li>
+
   </ul>
 </aside>
