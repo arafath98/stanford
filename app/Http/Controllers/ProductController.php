@@ -66,7 +66,7 @@ class ProductController extends Controller
         $this->validate($request,[
             'name' => 'required|min:2|max:255',
             'description' => 'required|min:10',
-            'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         $product = Product::find($request->product_id);

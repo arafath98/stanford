@@ -21,7 +21,23 @@ Route::get("/news", "NewsPageController@showNewsPage");
 Route::get("/about", "PageController@showAboutPage");
 
 // BACKEND
-Route::get("/admin", "AdminPanelController@showAdminPage");
+
+/**
+ *  ADMIN REGISTRATION
+ */
+
+Route::get("/admin/register", "AdminController@showRegistrationPage")->name('admin.register');
+Route::post("/admin/register/save", "AdminController@registerAdmin")->name('admin.register.save');
+
+/**
+ *  ADMIN LOGIN
+ */
+
+Route::get("/admin/login", "AdminController@showLoginPage")->name('admin.login.page');
+Route::post("admin/login/auth", "AdminController@adminLogin")->name('admin.login');
+
+
+Route::get("/admin", "AdminPanelController@showAdminPage")->name('admin.panel');
 
 // News
 Route::get("/admin/news/create", "NewsController@showCreateNewsPage")->name('admin.news.create');
@@ -56,3 +72,6 @@ Route::get("/admin/product/edit/{id}", "ProductController@showEditProductPage")-
 Route::post("/admin/product/update", "ProductController@updateEdit")->name('admin.product.updateEdit');
 
 Route::get("/admin/product/delete{id}", "ProductController@deleteProduct")->name('admin.product.delete');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
